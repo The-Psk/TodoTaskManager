@@ -2,6 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "IRANYekan";
+  src: url("../public/fonts/Yekan/ttf/iranyekanwebregularfanum.ttf");
+  src: url("../public/fonts/Yekan/ttf/iranyekanwebregularfanum.ttf")
+      format("ttf"),
+    url("../public/fonts/Yekan/eot/iranyekanwebregularfanum.eot") format("eot"),
+    url("../public/fonts/Yekan/woff/iranyekanwebregularfanum.woff")
+      format("woff");
+  font-weight: normal;
+  font-display: swap;
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -17,6 +29,7 @@
 }
 
 body {
+  font-family: "IRANYekan";
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -30,13 +43,4 @@ body {
   .text-balance {
     text-wrap: balance;
   }
-}
-.wh{
-  width: 50%;
-}
-.wsh{
-  width: 400px;
-}
-.h-9-{
-  height: 90% !important;
 }
